@@ -1,4 +1,4 @@
-FROM mobingi/ubuntu-apache2-python:latest
+FROM ubuntu:14.04
 
 MAINTAINER pamtrak06 <pamtrak06@gmail.com>
 
