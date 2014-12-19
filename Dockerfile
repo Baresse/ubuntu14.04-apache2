@@ -6,12 +6,11 @@ MAINTAINER pamtrak06 <pamtrak06@gmail.com>
 RUN echo "deb http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu trusty-security main restricted" >> /etc/apt/sources.list
 
 # Update os & install Apache
-RUN apt-get install -y \
-  libexpat1-dev libpq-dev libmysqlclient-dev libaprutil1-dev \
-  uuid-dev libsctp-dev libapr1-dev \
+RUN apt-get update & apt-get install -y \
   apache2 \
-  libapache2-mod-wsgi \
-  apache2-threaded-dev
+  apache2-threaded-dev \
+  libapache2-mod-wsgi
+
 
 # Set Apache environment variables
 #RUN source /etc/apache2/envvars
