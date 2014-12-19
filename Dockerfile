@@ -8,6 +8,7 @@ RUN echo "deb http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu trusty-secur
 # Update os & install Apache
 RUN apt-get install -y \
   libpcre3-dev \
+  libsqlite3-dev \
   libaprutil1-dev \
   libapr1-dev \
   apache2 \
