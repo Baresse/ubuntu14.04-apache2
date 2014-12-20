@@ -4,7 +4,7 @@ MAINTAINER pamtrak06 <pamtrak06@gmail.com>
 
 RUN apt-get update && apt-get install -y \
 	openssh-server \
-	apache2 \
+	apache2
 
 # Set Apache environment variables
 #RUN source /etc/apache2/envvars
