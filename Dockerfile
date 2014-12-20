@@ -7,7 +7,7 @@ RUN echo "deb http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu trusty-secur
 
 # Update os & install Apache
 RUN apt-get update & apt-get install -y \
-  apache2 \
+  libapr1-dev libaprutil1-dev apache2 \
   apache2-threaded-dev \
   libapache2-mod-wsgi
 
